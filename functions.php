@@ -417,13 +417,18 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-// SVG Icons class.
-// require get_template_directory() . '/classes/class-rasppel-svg-icons.php';
+/////////////////////////////
+/**
+ * SVG Icons class.
+ */
+require get_template_directory() . '/classes/class-volunteer-svg-icons.php';
 
-// Dark Mode.
-// require_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
-// new Twenty_Twenty_One_Dark_Mode();
+/**
+ * SVG Icons related functions.
+ */
+require get_template_directory() . '/inc/icon-functions.php';
 
+////////////////////////////
 /**
  * Customizer additions.
  */
