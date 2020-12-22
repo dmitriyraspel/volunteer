@@ -39,7 +39,7 @@ function volunteer_get_social_link_svg( $uri, $size = 24 ) {
 function volunteer_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	// Change SVG icon inside social links menu if there is supported URL.
 	if ( 'social' === $args->theme_location ) {
-		$svg = volunteer_get_social_link_svg( $item->url, 26 );
+		$svg = volunteer_get_social_link_svg( $item->url, 24 );
 		if ( empty( $svg ) ) {
 			$svg = volunteer_get_icon_svg( 'link' );
 		}
@@ -67,7 +67,7 @@ function volunteer_add_sub_menu_toggle( $output, $item, $depth, $args ) {
 	if ( 0 === $depth && in_array( 'menu-item-has-children', $item->classes, true ) ) {
 
 		// Add toggle button.
-		$output .= '<button class="sub-menu-toggle" aria-expanded="false" onClick="volunteerExpandSubMenu(this)">';
+		$output .= '<button class="sub-menu-toggle" aria-expanded="false">';
 		$output .= '<span class="icon-minus">' . volunteer_get_icon_svg( 'plus', 16 ) . '</span>';
 		$output .= '<span class="screen-reader-text">' . esc_html__( 'Open menu', 'volunteer' ) . '</span>';
 		$output .= '</button>';
