@@ -1,0 +1,22 @@
+.entry-header {
+   .entry-title {
+      font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1240 - 320)));
+      margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1240 - 320)));
+   }
+}
+
+.reset-list-style ol,
+.reset-list-style ul,
+.reset-list-style li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.test {
+	border: 1px solid rgb(241, 218, 186);	
+}
+.test1 {
+	background: rgb(241, 218, 186);
+	border: 1px solid red;	
+}

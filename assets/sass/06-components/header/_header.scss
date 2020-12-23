@@ -1,0 +1,35 @@
+// Site header
+@import "_burger-menu-toggle";
+// @import "_site-branding";
+// @import "_nav";
+// @import "header/mobile-menu";
+// @import "header/widget";
+
+.site-header {
+	max-width: 100%;
+	position: relative;
+   z-index: 2;
+
+	@media screen and (max-width: 400px) {
+		padding-right: 24px;
+	}
+	.header__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+      align-items: center;
+      max-width: var(--responsive--alignwide-width);
+      margin-right: auto;
+      margin-left: auto;
+	}
+	.menu-button-container {
+		position: absolute;
+		top: 24px;
+		right: 4px;
+   }
+}
+button.menu-toggle {
+   @media screen and (min-width: $navigation-break-point) {
+      // display: none;
+   }
+}

@@ -1,0 +1,26 @@
+a {
+	cursor: pointer;
+	color: $link-color;
+	border-bottom: 1px solid $link-color;
+	text-decoration: none;
+	transition: $base-transition;
+
+	&:visited {
+		color: $link-color-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $link-color-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

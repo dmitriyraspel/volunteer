@@ -1,0 +1,21 @@
+/* Variables */
+
+// Vertical Rhythm Multiplier
+$baseline-unit: 10px;
+
+:root {
+   
+   --global--spacing-unit: #{2 * $baseline-unit}; // 20px
+   --global--spacing-horizontal: #{2.5 * $baseline-unit}; // 25px
+   --global--spacing-vertical: #{3 * $baseline-unit}; // 30px 
+
+   
+   .admin-bar {
+      --global--admin-bar--height: 32px;
+   
+      @media only screen and (max-width: 782px) {
+         --global--admin-bar--height: 46px;
+      }
+   }
+
+}

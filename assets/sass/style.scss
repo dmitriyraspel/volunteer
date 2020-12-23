@@ -1,0 +1,44 @@
+// @import "01-settings/file-header";
+
+/* Categories 01 to 03 are the basics. */
+// @import "01-settings/colors";
+@import "01-settings/variables";
+// @import "01-settings/fonts";
+@import "01-settings/config";
+
+@import "02-tools/mixins";
+
+@import "03-generic/normalize";
+   // @import "03-generic/breakpoints";
+   // @import "03-generic/vertical-margins";
+@import "03-generic/reset";
+@import "03-generic/clearings";
+@import "03-generic/base";
+
+
+/* Category 04 */
+// @import "04-elements/blockquote";
+// @import "04-elements/forms";
+// @import "04-elements/buttons";
+// @import "04-elements/media";
+// @import "04-elements/copy";
+@import "04-elements/headings";
+@import "04-elements/links";
+// @import "04-elements/hr";
+// @import "04-elements/lists";
+// @import "04-elements/tables"; 
+
+
+@import "05-blocks/blocks"; 
+
+
+/* Category 06 components */
+@import "06-components/header/header";
+// @import "06-components/social-navigation";
+// @import "06-components/plugins/card";
+
+
+/* Category 07 is for any utility classes that are not assigned to a specific component. */
+@import "07-utilities/screen-reader-text";
+// @import "07-utilities/alignments";
+
