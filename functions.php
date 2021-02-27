@@ -339,7 +339,7 @@ function volunteer_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
-	
+
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Footer', 'volunteer' ),
@@ -348,6 +348,18 @@ function volunteer_widgets_init() {
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Header-top', 'volunteer' ),
+			'id'            => 'sidebar-4',
+			'description'   => esc_html__( 'Add widgets here to appear in your before header.', 'volunteer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title screen-reader-text">',
 			'after_title'   => '</h2>',
 		)
 	);
